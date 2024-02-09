@@ -7,6 +7,13 @@ spring:
     username: postgres
     password: 123456
 
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 51cf9a8d55d606960466
+            clientSecret: f360783f656d493d110deb5022b2c4f69f6df6be
 
   jpa:
     hibernate:
@@ -33,4 +40,3 @@ application:
       expiration: 86400000 # a day
       refresh-token:
         expiration: 604800000 # 7 days
-

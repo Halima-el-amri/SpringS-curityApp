@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/users")
 public class UtilisateurController {
@@ -47,7 +47,5 @@ public class UtilisateurController {
         utilisateurService.deleteUtilisateur(id);
         return new ResponseEntity<>("User deleted successfully", HttpStatus.OK);
     }
-
-
 
 }

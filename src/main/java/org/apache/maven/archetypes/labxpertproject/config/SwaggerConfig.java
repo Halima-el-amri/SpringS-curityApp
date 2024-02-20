@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.apache.maven.archetypes.labxpertproject.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.apache.maven.archetypes.labxpertproject"))
                 .paths(PathSelectors.any())
                 .build();
     }
